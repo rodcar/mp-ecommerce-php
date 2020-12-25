@@ -3,7 +3,7 @@
 require __DIR__ .  '/vendor/autoload.php';
 
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('APP_USR-72b18fd4-a674-424c-9b9d-edd7f5f29814');
+MercadoPago\SDK::setAccessToken('APP_USR-8208253118659647-112521-dd670f3fd6aa9147df51117701a 2082e-677408439');
 
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
