@@ -4,6 +4,7 @@ require __DIR__ .  '/vendor/autoload.php';
 
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('APP_USR-8208253118659647-112521-dd670f3fd6aa9147df51117701a 2082e-677408439');
+MercadoPago\SDK::setIntegratorId("​dev_2e4ad5dd362f11eb809d0242ac130004");
 
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
@@ -14,7 +15,7 @@ $item->title = 'Mi producto';
 $item->quantity = 1;
 $item->unit_price = 1;
 $preference->items = array($item);
-$preference->payment_methods->installments = 6;
+
 $preference->save();
 ?>
 <!DOCTYPE html>
